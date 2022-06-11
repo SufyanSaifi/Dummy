@@ -1,0 +1,24 @@
+<table class="table table-hover">
+    <thead class="thead-dark" >
+        <tr >
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Date of Joining</th>
+            <th>Gender</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let Emp of this.EmpService.ListEmployee">
+        <td>{{Emp.Name}}</td>
+        <td>{{Emp.LastName}}</td>
+        <td>{{Emp.Email}}</td>
+        <td>{{Emp.Age}}</td>
+        <td>{{Emp.DOJ}}</td>
+        <td>{{Emp.Gender}}</td>
+       </tr>
+    </tbody>
+
+</table>
